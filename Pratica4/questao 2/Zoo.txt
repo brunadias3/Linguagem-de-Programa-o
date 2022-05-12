@@ -1,0 +1,32 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+
+/**
+ *
+ * @author bruna
+ */
+public class Zoo {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Peixe pei = new Peixe("baiacu",5, "rio");
+        Peixe pei2 = new Peixe("piranha", 1.5, "mar");
+        Cachorro hagi = new Cachorro("hagi", 10, "pedigree");
+        Cachorro sam = new Cachorro("sam", 15, "vira lata");
+        
+        //imprimindo
+        pei.imprimir();
+        System.out.println();
+        pei2.imprimir();
+        System.out.println();
+        hagi.imprimir();
+        System.out.println();
+        sam.imprimir();
+    }
+    
+}

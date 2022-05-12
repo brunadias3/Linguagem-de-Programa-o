@@ -1,0 +1,36 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+
+/**
+ *
+ * @author bruna
+ */
+public class Empresa {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Gerente bruna = new Gerente("bruna", 123, 5000, 999);
+        Gerente vitoria = new Gerente("vitoria", 789, 15000, 555);
+        
+        //obj 1
+        System.out.println("Nome: " + bruna.nome);
+        System.out.println("CPF: " + bruna.cpf);
+        System.out.println("Salário: " + bruna.salario);
+        bruna.autentica(999);
+        System.out.println();
+        
+        
+        //obj 2
+        System.out.println(vitoria.nome);
+        System.out.println(vitoria.cpf);
+        System.out.println(vitoria.salario);
+        vitoria.autentica(999);
+        System.out.println();
+    }
+    
+}

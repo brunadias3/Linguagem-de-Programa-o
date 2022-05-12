@@ -1,0 +1,34 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author bruna
+ */
+public class Funcionario extends Pessoa {
+    protected double salario;
+    
+    //constructor
+    public Funcionario(String nome, String rg, double salario){
+        super(nome,rg);
+        this.salario = salario;
+    }
+    
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+    
+    //metodo
+    public void aumentar_salario(double percentual) {
+        percentual = percentual / 100;
+        salario = (percentual * this.salario) + this.salario;
+        System.out.println("Salario com aumento é: " + salario);
+        
+    }
+}

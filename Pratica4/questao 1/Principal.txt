@@ -1,0 +1,24 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+
+/**
+ *
+ * @author bruna
+ */
+public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Funcionario f1 = new Funcionario("bruna", "99999", 100);
+        System.out.println("Nome: " + f1.nome);
+        System.out.println("RG: " + f1.rg);
+        System.out.println("Salario: " + f1.salario);
+        f1.aumentar_salario(10);
+    }
+    
+}
